@@ -76,8 +76,12 @@ namespace OverSurgeryUnitTest
 
             GPHandler gpHnd = new GPHandler();
             int resp2 = gpHnd.addNewGP(dbC.getConn(), gp);
-
-
+            Assert.IsNotNull(resp2);
         }
     }
 }
+
+
+
+
+

@@ -11,7 +11,9 @@ namespace OverSurgery
     {
         public int addNewGP(MySqlConnection conn, GeneralPractitioner gp)
         {
-            string sql = "INSERT INTO gp(name, status, date_joined, login_name, password) VALUES ('" + gp.Name + "','" + gp.Status + "','" + gp.DateJoined.ToString() + "','" + gp.LoginName + "," + gp.Password + "')";
+            string sql = "INSERT INTO gp(name, status, date_joined, login_name, password) VALUES ('" 
+                + gp.Name + "','" + gp.Status + "','" + gp.DateJoined.ToString() + "','" + gp.LoginName 
+                + "','" + gp.Password + "')";
 
             MySqlCommand cmd = new MySqlCommand(sql, conn);
 
@@ -19,3 +21,5 @@ namespace OverSurgery
         }
     }
 }
+
+
